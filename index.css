@@ -1,0 +1,16 @@
+tr > td{
+    font-weight: bolder;
+}
+
+.submit-box{
+    margin-left: 200px;
+    font-weight: bold;
+}
+
+.reset-box{
+    font-weight: bold;
+}
+
+.date-box{
+    font-weight: bolder;
+}
