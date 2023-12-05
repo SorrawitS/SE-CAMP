@@ -7,10 +7,25 @@
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
+    <div class ="logo-img">
+        <img src="./Photo/Buu-logo.png" alt="">
+    </div>
     <div class="Main-Box">
 
-        <div class ="logo-img">
-            <img src="./Photo/Buu-logo.png" alt="">
+        <div class="tab-left">
+            <div class="img-nine">
+                <img src="./Photo/Untitled_Artwork 4 copy.png" alt="">
+            </div>
+
+            <div class="back-button">
+                <button>ยำวุ้นเส้นขอบฟ้า</button>
+                <button>พัดฟักทอง</button>
+                <button>ยำไก่เดฟแซ่บ</button>
+                <button>ไข่ข้น</button>
+                <button>ปูผัดผงกระหรี่</button>
+                <button>กะเพราเจ๋งแซ่บ</button>
+                <button>ข้าวหน้าแมวแกะคะนิ๊ง</button>
+            </div>
         </div>
 
         <form action="">
@@ -32,7 +47,7 @@
                         <td><input class = " date-box "type="date" name="" id=""></td>
                     </tr>
     
-                    <td>วันเกิด  <br> (ฺBirthday)</td>
+                    <td>วันเกิด  <br> (Bride Day)</td>
                         <td><input type="text"></td>
     
                     <tr>
@@ -40,10 +55,10 @@
                             เพศ <br> (Sex)
                         </td>
                         <td>
-                            <input id="radio_a" type="radio" name="same_radio"/>
+                            <input id="radio_a" type="radio" name="same_radio-sex"/>
                             <label for="radio_a">ชาย (Male)</label>
     
-                            <input id="radio_b"type="radio" name="same_radio"/>
+                            <input id="radio_b"type="radio" name="same_radio-sex"/>
                             <label for="radio_b">หญิง (Female)</label>
     
     
@@ -52,7 +67,9 @@
     
                     <tr>
                         <td>รูป <br> (Picture)</td>
-                        <td><input type="file"></td>
+                        <td>
+                            <input id="Picture-input" type="file">
+                        </td>
                     </tr>
     
                     <tr>
