@@ -51,6 +51,7 @@ h1{
 }
 
 .item-two:hover{
+    cursor: pointer;
     transform: scale(1.5);
     box-shadow: 1px 1px 50px rgb(255, 166, 0);
 }
@@ -67,6 +68,7 @@ h1{
 }
 
 .item-three:hover{
+    cursor: pointer;
     transform: scale(1.5);
     box-shadow: 1px 1px 50px rgb(140, 0, 255);
 }
@@ -83,6 +85,7 @@ h1{
 }
 
 .item-four:hover{
+    cursor: pointer;
     transform: scale(1.5);
     box-shadow: 1px 1px 50px rgb(255, 0, 0);
 }
@@ -99,6 +102,7 @@ h1{
 }
 
 .item-five :hover{
+    cursor: pointer;
     transform: scale(1.8);
     box-shadow: 1px 1px 50px rgb(200, 255, 0);
 }
@@ -115,6 +119,7 @@ h1{
 }
 
 .item-six :hover{
+    cursor: pointer;
     transform: scale(1.8);
     box-shadow: 1px 1px 50px rgb(255, 208, 0);
 }
@@ -136,4 +141,8 @@ h1{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.span-font{
+
 }
