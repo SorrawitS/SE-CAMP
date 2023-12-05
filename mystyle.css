@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+body{
+    font-family: 'Archivo Black', sans-serif;
+    background: url(./Photo/background-website.JPG) repeat center center fixed;
+    background-size: cover;
+}
+.box{
+    display: grid;
+    grid-template-columns: 100px 100px 100px 100px 100px;
+    grid-template-rows : 100px 100px 100px 100px 100px;
+    height: 500px;
+    width: 500px;
+    color: rgb(255, 255, 255);
+    background-color:rgb(88, 90, 88);
+    text-align: center;
+    border: 5px dashed rgb(255, 255, 255);
+    margin: 50px 25px;
+    box-shadow: 1px 1px 100px rgb(255, 255, 255);
+}
+
+
+.box:hover{
+    background-color:rgb(118, 11, 82);
+}
+
+h1{
+    color: beige;
+    margin-top: 50px;
+    font-size: 50px;
+    text-align: center;
+}
+
+.item-one{
+    border-width: 5px;
+    border-color: rgb(255, 255, 255);
+    border-style: dotted;
+    grid-row-start: 3;
+    grid-column-start: 3;
+    padding-top: 25px;
+}
+
+.item-two{
+    grid-row: span 2;
+    grid-column:  span 3;
+    
+}
+
+.item-two > img{
+    width: 100%;
+    height: 100%;
+}
+
+.item-two:hover{
+    transform: scale(1.5);
+    box-shadow: 1px 1px 50px rgb(255, 166, 0);
+}
+
+.item-three{
+    grid-row: span 2;
+    grid-column: span 2;
+    
+}
+
+.item-three > img{
+    width: 100%;
+    height: 100%;
+}
+
+.item-three:hover{
+    transform: scale(1.5);
+    box-shadow: 1px 1px 50px rgb(140, 0, 255);
+}
+
+.item-four{
+    grid-row: span 3;
+    grid-column: span 2;
+    
+}
+
+.item-four > img {
+    width: 100%;
+    height: 100%;
+}
+
+.item-four:hover{
+    transform: scale(1.5);
+    box-shadow: 1px 1px 50px rgb(255, 0, 0);
+}
+
+.item-five{
+    grid-row: span 1;
+    grid-column:  span 2;
+    
+}
+
+.item-five > img{
+    width: 100%;
+    height: 100%;
+}
+
+.item-five :hover{
+    transform: scale(1.8);
+    box-shadow: 1px 1px 50px rgb(200, 255, 0);
+}
+
+.item-six{
+    grid-row: span 2;
+    grid-column:  span 3;
+    
+}
+
+.item-six > img{
+    width: 100%;
+    height: 100%;
+}
+
+.item-six :hover{
+    transform: scale(1.8);
+    box-shadow: 1px 1px 50px rgb(255, 208, 0);
+}
+
+.music{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 150px;
+   margin-bottom: 50px;
+}
+
+.music-fix{
+    box-shadow: 1px 1px 50px rgb(240, 0, 240);
+    border-radius: 29px;
+}
+
+.flex-setting{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
