@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="php101.css">
+    <link rel="stylesheet" href="php.css">
 </head>
 
 <body>
@@ -13,13 +13,10 @@
     <table>
         <tbody>
             <div class = "hey_love">
-                
             <?php $num = 1;
             for ($x = 1; $x <= 24; $x++) {
                  $num = $multi_x * $x;
-                 
-                echo " {$multi_x}x $x = $num <br>";
-                
+                echo "{$multi_x}&nbsp&nbsp;&nbsp; x &nbsp&nbsp;&nbsp;$x = &nbsp&nbsp;&nbsp;$num <br>";
               }
             ?>
             </div>

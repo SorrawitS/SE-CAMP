@@ -8,11 +8,12 @@ h1{
     text-align: center;
 }
 
+
 .hey_love{
     width: 350px;
     height: 265px;
     overflow: scroll;
     text-align: center;
     padding-top: 20px;
-    background-color: rgb(153, 153, 153);
+    background-color: rgb(255, 255, 255);
 }
