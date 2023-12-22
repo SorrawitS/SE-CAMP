@@ -1,19 +1,141 @@
 body{
     display: grid;
-    background-image: url();
+    background-image: url("https://pixexid.com/api/download/image/a-4k-ultra-hd-wallpaper-depicting-a-couple-walking-hand-in-hand-on-a-snowy-stree-ywwuyrne.jpeg");
     background-size: cover;
     place-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+}
+
+.flex-setting{
+    margin-top: 30px;
+    height: 200px;
+    width: 600px;
+    display: flex;
+    border-width: 3px;
+    border-style: solid;
+}
+
+.flex-setting > div > img{
+   width: 147%;
+   height: 100%;
+}
+
+.box{
+    margin-top: 40px;
+    background-color: aliceblue;
+    width: 600px;
+    height: 100px;
+    border-radius: 80px;
 }
 h1{
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
     text-align: center;
+    font-size: 28px;
 }
 
 
 .hey_love{
-    width: 350px;
-    height: 265px;
+    grid-row: span 2;
+    grid-column: span 2;
     overflow: scroll;
     text-align: center;
     padding-top: 20px;
+    background-color: rgb(0, 0, 0);
+}
+
+
+.hey_love_two{
+    grid-row-start: 1;
+    grid-column-start: 3;
+    grid-row: span 2;
+    grid-column: span 2;
+    overflow: scroll;
+    text-align: center;
+    padding-top: 20px;
+    background-color: rgb(255, 0, 0);
+}
+
+.hey_love_three{
+    grid-row-start: 1;
+    grid-column-start: 5;
+    grid-row: span 2;
+    grid-column: span 2;
+    overflow: scroll;
+    text-align: center;
+    padding-top: 20px;
+    background-color: rgb(234, 0, 255);
+}
+
+.hey_love_four{
+    grid-row-start: 2;
+    grid-column-start: 1;
+    grid-row: span 2;
+    grid-column: span 2;
+    overflow: scroll;
+    text-align: center;
+    padding-top: 20px;
+    background-color: rgb(0, 132, 255);
+}
+
+.hey_love_five{
+    color: black;
+    grid-row-start: 2;
+    grid-column-start: 3;
+    grid-row: span 2;
+    grid-column: span 2;
+    overflow: scroll;
+    text-align: center;
+    padding-top: 20px;
+    background-color: rgb(0, 255, 170);
+}
+
+.hey_love_six{
+    grid-row-start: 2;
+    grid-column-start: 5;
+    grid-row: span 2;
+    grid-column: span 2;
+    overflow: scroll;
+    text-align: center;
+    padding-top: 20px;
+    color: black;
     background-color: rgb(255, 255, 255);
+}
+
+.hey_love_seven{
+    background-image: url("https://i.pinimg.com/originals/29/fe/4c/29fe4c60da1d80eda25c5158b4ba89f4.gif");
+    background-size: cover;
+    grid-row-start: 3;
+    grid-column-start: 1;
+    grid-row: span 6;
+    grid-column: span 6;
+    overflow: scroll;
+    text-align: center;
+    padding-top: 20px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(255, 145, 0);
+}
+
+.hey_love_seven > div{
+
+
+}
+
+
+.grid-setting{
+    display: grid;
+    grid-template-columns: 100px 100px 100px 100px 100px 100px;
+    grid-template-rows : 100px 100px 100px 100px 100px 100px;
+    height: 600px;
+    width: 600px;
+    color: rgb(255, 255, 255);
+    background-color:rgb(160, 160, 160);
+    border-color: rgb(255, 255, 255);
+    border-width: 10px;
+    border-style: solid;
+    text-align: center;
+    margin: 50px 25px;
+    box-shadow: 1px 1px 100px rgb(238, 255, 0);
 }
