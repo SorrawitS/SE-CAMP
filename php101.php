@@ -7,26 +7,15 @@
 </head>
 
 <body>
-<<<<<<< Updated upstream
-=======
-<<<<<<< HEAD
-    <?php $multi_x = 2; ?>
-    <h1>ตารางสูตรคูณแม่ Something <?php echo $multi_x ?></h1>
-=======
->>>>>>> Stashed changes
+
+
     <div class = "box">
     <h1>ตารางสูตรคูณแม่ 2 , 4 , 6 , 8 , 10 , 12 , 14 </h1>
     </div>
     <div class= "flex-setting">
     <div>
-    <img src="https://i0.wp.com/wordzz.com/wp-content/uploads/2018/12/Happy-New-Year-Images-Gif.gif?resize=656%2C320&ssl=1" alt="">
-    </div>
-<<<<<<< Updated upstream
-=======
->>>>>>> 0e4600ed068d4f70fbd211e03e5575003941e628
->>>>>>> Stashed changes
-
-    </div>
+    <img  src="https://i0.wp.com/wordzz.com/wp-content/uploads/2018/12/Happy-New-Year-Images-Gif.gif?resize=656%2C320&ssl=1" alt="">
+    
     
     <div class = "grid-setting">
     <div class = "hey_love">
@@ -37,18 +26,9 @@
                 echo "{$multi_x}&nbsp&nbsp;&nbsp; x &nbsp&nbsp;&nbsp;$x = &nbsp&nbsp;&nbsp;$num <br>";
               }
             ?>
-<<<<<<< Updated upstream
-=======
-<<<<<<< HEAD
+
             </div>
-        </tbody>
-    </table>
-
-=======
->>>>>>> Stashed changes
-    </div>
-
-    <div class = "hey_love_two">
+            <div class = "hey_love_two">
     <?php $multi_x = 4; ?>
             <?php $num = 1;
             for ($x = 1; $x <= 24; $x++) {
@@ -109,13 +89,12 @@
             ?>
     </div>
         </div>
-    
 
     </div>
-        
-   
-  
->>>>>>> 0e4600ed068d4f70fbd211e03e5575003941e628
+
+    
+    </div>
+
 </body>
 
 </html>
