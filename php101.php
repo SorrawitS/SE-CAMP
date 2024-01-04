@@ -13,8 +13,10 @@
     <h1>ตารางสูตรคูณแม่ 2 , 4 , 6 , 8 , 10 , 12 , 14 </h1>
     </div>
     <div class= "flex-setting">
-    <div>
     <img  src="https://i0.wp.com/wordzz.com/wp-content/uploads/2018/12/Happy-New-Year-Images-Gif.gif?resize=656%2C320&ssl=1" alt="">
+    </div>
+    <div>
+    
     
     
     <div class = "grid-setting">
