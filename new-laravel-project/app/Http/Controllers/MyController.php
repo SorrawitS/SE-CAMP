@@ -16,6 +16,10 @@ class MyController extends Controller
         return view('myfolder.home' , $data);
     }
     
+    public function store(Request $req){
+        $data['myinput'] = $req->input('myinput');
+        return view('myroute', $data);
+    }
    
 
 }

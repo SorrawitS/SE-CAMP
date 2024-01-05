@@ -14,17 +14,23 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('welcome'); // welcome.blade.php
 });
 
-Route::get('/my-route', function () {
-    $data = ['val_a' => 'Hello World'];
+// use Illuminate\Http\Request;
+
+Route::get('/my-route', function(){
+    // return view('myroute');
+    //        Key    =>  Value
+    $data = ['val_a' => 'Hello World!'];
     $data['val_b'] = "Laravel";
-    return view('myfolder.mypage' , $data);
+    return view('myfolder.mypage',$data);
 });
 
-Route::post('/my-route', function (Request $req) {
-    return view('myroute');
+
+Route::post('/my-route', function(Request $req){
+    $data['myinput'] =  $req->input('myinput');
+    return view('myroute', $data);
 });
 
 Route::get('/my-controller', [MyController::class, 'index']);
