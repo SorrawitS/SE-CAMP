@@ -11,14 +11,11 @@ class MyController extends Controller
 
     }
     public function index(){
-        return view('home');
+        $data = ['val_a' => 'Hello World'];
+        $data['val_b'] = "Laravel";
+        return view('myfolder.home' , $data);
     }
-
-    public function store(Request $req){
-        $data['myinput'] = $req->input('myinput');
-        return view('myroute', $data);
-    }
-
+    
    
 
 }
