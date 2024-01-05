@@ -27,7 +27,7 @@ Route::get('/my-route', function(){ //เอาไว้เข้าถึงต
     return view('myfolder.homeworkDynamic',$data);
 });
 
-Route::post('/my-route', function(){
+Route::post('/my-route', function(Request $req){
     $data['myinput'] =  $req->input('myinput');
     return view('myroute');
 });
