@@ -19,19 +19,21 @@ Route::get('/', function () {
 
 // use Illuminate\Http\Request;
 
-Route::get('/my-route', function(){
+Route::get('/my-route', function(){ //เอาไว้เข้าถึงตัวเว็บที่เราอยากจะแสดงผล ใน myfloder
     // return view('myroute');
     //        Key    =>  Value
     $data = ['val_a' => 'Hello World!'];
     $data['val_b'] = "Laravel";
-    return view('myfolder.mypage',$data);
+    return view('myfolder.homeworkDynamic',$data);
 });
 
-
-Route::post('/my-route', function(Request $req){
+Route::post('/my-route', function(){
     $data['myinput'] =  $req->input('myinput');
-    return view('myroute', $data);
+    return view('myroute');
 });
+
+
+
 
 Route::get('/my-controller', [MyController::class, 'index']);
 Route::get('/my-controller2', 'App\Http\Controllers\MyController@index');

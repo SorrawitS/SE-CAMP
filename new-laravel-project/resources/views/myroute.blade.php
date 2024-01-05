@@ -7,5 +7,6 @@
 </head>
 <body>
    <h1>Hey Lover!!!!</h1>
+   <h1>{{ $myinput }}</h1>
 </body>
 </html>

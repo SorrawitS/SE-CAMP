@@ -15,11 +15,8 @@ class MyController extends Controller
         $data['val_b'] = "Laravel";
         return view('myfolder.home' , $data);
     }
-    
-    public function store(Request $req){
-        $data['myinput'] = $req->input('myinput');
-        return view('myroute', $data);
-    }
+
+
    
 
 }
