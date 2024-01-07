@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use Illuminate\Http\Request;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -28,7 +28,6 @@ Route::get('/my-route', function(){ //เอาไว้เข้าถึงต
 });
 
 Route::post('/my-route', function(Request $req){
-    $data['myinput'] =  $req->input('myinput');
     return view('myroute');
 });
 

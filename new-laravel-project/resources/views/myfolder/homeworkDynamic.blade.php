@@ -13,12 +13,14 @@
     <marquee behavior="" direction="">Multiplication Table with User Input</marquee>
     <div class = "form">
 
-        <form method="post" action="/my-route">
+        <form action="/my-route" method="POST">
             @csrf
             <label for="detail">Enter a Number</label>
-            <input type="text" name ="myinput">
-            <input type="submit"> Submit </button>
+            <input type="text" name ="number">
+            <input type="submit" Value="submit" id="submit">
         </form>
     </div>
+
+
 </body>
 </html>
