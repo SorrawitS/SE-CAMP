@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=H1, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="mypage.css">
 </head>
 <body>
     <h1>Hey lover coffee</h1>
