@@ -44,6 +44,6 @@ Route::namespace('App\Http\Controllers')->group(function(){
 Route::resource('my-controller4' , MyController::class);
 
 //Route -> web.php
-
+use App\Http\Controllers\C_titles;
 Route::resource('titles', C_titles::class);
 
