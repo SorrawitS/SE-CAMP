@@ -26,84 +26,172 @@
             <div class="row">
                 <div class="col-lg-12">
                     <!-- general form elements -->
-                    <div class="card card-primary">
-                        <div class="card-header">
-                            <h3 class="card-title">ข้อมูลคำนำหน้าชื่อ (Title)</h3>
-                        </div>
-                        <!-- /.card-header -->
-                        <!-- form start -->
-                        <form action="/titles<?php if (isset($title_id)) {
-                            echo '/' . $title_id->tit_id;
-                        } ?>" method="post">
-                            <?php if (isset($title_id)) { ?>
-                            @method('PUT')
-                            <?php } ?>
-                            @csrf
-                            <div class="card-body">
-                                <div class="form-group">
-                                    <label for="exampleInputEmail1">คำนำหน้าชื่อ</label>
-                                    <input type="text" name="tit_name" value="<?php if (isset($title_id)) {
-                                        echo $title_id->tit_name;
-                                    } ?>" class="form-control"
-                                        id="exampleInputEmail1" placeholder="เช่น นาย นาง นางสาว ฯลฯ">
-                                </div>
-                                <div class="form-check">
-                                    <input type="checkbox" name="tit_is_active" <?php if(isset($title_id) &&
-                                                $title_id->tit_is_active == 1){?> checked
-                                        <?php }?> class="form-check-input" id="exampleCheck1">
-                                    <label class="form-check-label" for="exampleCheck1">ใช้งาน</label>
-                                </div>
-                            </div>
-                            <!-- /.card-body -->
-
-                            <div class="card-footer">
-                                <button type="submit" class="btn btn-success">บันทึก</button>
-                            </div>
-                        </form>
+            <div class="card card-primary">
+                <div class="card-header">
+                  <h3 class="card-title">Quick Example</h3>
+                </div>
+                <!-- /.card-header -->
+                <!-- form start -->
+                <form>
+                  <div class="card-body">
+                    <div class="form-group">
+                      <label for="exampleInputEmail1">Email address</label>
+                      <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
                     </div>
-                    <!-- /.card -->
+                    <div class="form-group">
+                      <label for="exampleInputPassword1">Password</label>
+                      <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleInputFile">File input</label>
+                      <div class="input-group">
+                        <div class="custom-file">
+                          <input type="file" class="custom-file-input" id="exampleInputFile">
+                          <label class="custom-file-label" for="exampleInputFile">Choose file</label>
+                        </div>
+                        <div class="input-group-append">
+                          <span class="input-group-text">Upload</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-check">
+                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                      <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                    </div>
+                  </div>
+                  <!-- /.card-body -->
+
+                  <div class="card-footer">
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                  </div>
+                </form>
+              </div>
+              <!-- /.card -->
+
+              <!-- general form elements -->
+              <div class="card card-primary">
+                <div class="card-header">
+                  <h3 class="card-title">Different Styles</h3>
+                </div>
+                <!-- /.card-header -->
+                <div class="card-body">
+                  <h4>Input</h4>
+                  <div class="form-group">
+                    <label for="exampleInputBorder">Bottom Border only <code>.form-control-border</code></label>
+                    <input type="text" class="form-control form-control-border" id="exampleInputBorder" placeholder=".form-control-border">
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputBorderWidth2">Bottom Border only 2px Border <code>.form-control-border.border-width-2</code></label>
+                    <input type="text" class="form-control form-control-border border-width-2" id="exampleInputBorderWidth2" placeholder=".form-control-border.border-width-2">
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputRounded0">Flat <code>.rounded-0</code></label>
+                    <input type="text" class="form-control rounded-0" id="exampleInputRounded0" placeholder=".rounded-0">
+                  </div>
+                  <h4>Custom Select</h4>
+                  <div class="form-group">
+                    <label for="exampleSelectBorder">Bottom Border only <code>.form-control-border</code></label>
+                    <select class="custom-select form-control-border" id="exampleSelectBorder">
+                      <option>Value 1</option>
+                      <option>Value 2</option>
+                      <option>Value 3</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleSelectBorderWidth2">Bottom Border only <code>.form-control-border.border-width-2</code></label>
+                    <select class="custom-select form-control-border border-width-2" id="exampleSelectBorderWidth2">
+                      <option>Value 1</option>
+                      <option>Value 2</option>
+                      <option>Value 3</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleSelectRounded0">Flat <code>.rounded-0</code></label>
+                    <select class="custom-select rounded-0" id="exampleSelectRounded0">
+                      <option>Value 1</option>
+                      <option>Value 2</option>
+                      <option>Value 3</option>
+                    </select>
+                  </div>
+                </div>
+                <!-- /.card-body -->
+              </div>
                 </div>
             </div>
             <!-- /.row -->
             <div class="row">
-                <div class="col-lg-12">
-                    <div class="card">
-                        <div class="card-header">
-                            <h3 class="card-title">ผลลัพธ์</h3>
-                        </div>
-                        <!-- /.card-header -->
-                        <div class="card-body">
-                            <table class="table table-bordered">
-                                <thead>
-                                    <tr>
-                                        <th style="width: 10px">#</th>
-                                        <th>คำนำหน้าชื่อ</th>
-                                        <th>สถานะการใช้งาน</th>
-                                        <th>เครื่องมือ</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <?php foreach($titles as $index => $title) {?>
-                                    <tr>
-                                        <td>{{ $index + 1 }}.</td>
-                                        <td>{{ $title->tit_name }}</td>
-                                        <td>
-                                            {{ $title->tit_is_active }}
-                                        </td>
-                                        <td>
-                                            <a href="{{ url('/titles/' . $title->tit_id) }}"
-                                                class="btn btn-warning">แก้ไข</a>
-                                        </td>
-                                    </tr>
-                                    <?php } ?>
-                                </tbody>
-                            </table>
-                        </div>
-                        <!-- /.card-body -->
+                <div class="card">
+                    <div class="card-header">
+                      <h3 class="card-title">Bordered Table</h3>
                     </div>
-                    <!-- /.card -->
-                </div>
-            </div><!-- /.row -->
+                    <!-- /.card-header -->
+                    <div class="card-body">
+                      <table class="table table-bordered">
+                        <thead>
+                          <tr>
+                            <th style="width: 10px">#</th>
+                            <th>Task</th>
+                            <th>Progress</th>
+                            <th style="width: 40px">Label</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>1.</td>
+                            <td>Update software</td>
+                            <td>
+                              <div class="progress progress-xs">
+                                <div class="progress-bar progress-bar-danger" style="width: 55%"></div>
+                              </div>
+                            </td>
+                            <td><span class="badge bg-danger">55%</span></td>
+                          </tr>
+                          <tr>
+                            <td>2.</td>
+                            <td>Clean database</td>
+                            <td>
+                              <div class="progress progress-xs">
+                                <div class="progress-bar bg-warning" style="width: 70%"></div>
+                              </div>
+                            </td>
+                            <td><span class="badge bg-warning">70%</span></td>
+                          </tr>
+                          <tr>
+                            <td>3.</td>
+                            <td>Cron job running</td>
+                            <td>
+                              <div class="progress progress-xs progress-striped active">
+                                <div class="progress-bar bg-primary" style="width: 30%"></div>
+                              </div>
+                            </td>
+                            <td><span class="badge bg-primary">30%</span></td>
+                          </tr>
+                          <tr>
+                            <td>4.</td>
+                            <td>Fix and squish bugs</td>
+                            <td>
+                              <div class="progress progress-xs progress-striped active">
+                                <div class="progress-bar bg-success" style="width: 90%"></div>
+                              </div>
+                            </td>
+                            <td><span class="badge bg-success">90%</span></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <!-- /.card-body -->
+                    <div class="card-footer clearfix">
+                      <ul class="pagination pagination-sm m-0 float-right">
+                        <li class="page-item"><a class="page-link" href="#">&laquo;</a></li>
+                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item"><a class="page-link" href="#">&raquo;</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <!-- /.card -->
+            </div>
         </div><!-- /.container-fluid -->
     </div>
     <!-- /.content -->
