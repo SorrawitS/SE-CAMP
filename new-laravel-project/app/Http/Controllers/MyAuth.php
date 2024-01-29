@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 class MyAuth extends Controller
 {
     function login_view(){
-
+        return view('login');
     }
     function login_progress(Request $req){
 
@@ -18,10 +18,10 @@ class MyAuth extends Controller
     }
 
     function register_view(){
-
+        return view('register');
     }
 
-    function register_process(){
+    function register_process(Request $req){
 
     }
 

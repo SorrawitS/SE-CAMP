@@ -17,8 +17,14 @@ Route::get('/', function () {
     return view('welcome'); // welcome.blade.php
 });
 
-// use Illuminate\Http\Request;
+use App\Http\Controllers\MyAuth;
+Route::get('/login', [MyAuth::class, 'login_view'])->name('login');
+Route::get('/login', [MyAuth::class, 'register_view']);
+Route::post('/login', [MyAuth::class, 'logout_process']);
+Route::post('/login', [MyAuth::class, 'login_process']);
+Route::post('/login', [MyAuth::class, 'register_process']);
 
+// use Illuminate\Http\Request;
 Route::get('/my-route', function(){ //เอาไว้เข้าถึงตัวเว็บที่เราอยากจะแสดงผล ใน myfloder
     // return view('myroute');
     //        Key    =>  Value
@@ -45,5 +51,8 @@ Route::resource('my-controller4' , MyController::class);
 
 //Route -> web.php
 use App\Http\Controllers\C_titles;
-Route::resource('titles', C_titles::class);
+Route::resource('titles', C_titles::class)->middleware('auth');
+Route::middleware('auth')->group(function(){
+    //auth frist
+});
 
