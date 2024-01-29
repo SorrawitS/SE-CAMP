@@ -19,10 +19,10 @@ Route::get('/', function () {
 
 use App\Http\Controllers\MyAuth;
 Route::get('/login', [MyAuth::class, 'login_view'])->name('login');
-Route::get('/login', [MyAuth::class, 'register_view']);
-Route::post('/login', [MyAuth::class, 'logout_process']);
+Route::get('/register', [MyAuth::class, 'register_view']);
+Route::post('/logout', [MyAuth::class, 'logout_process']);
 Route::post('/login', [MyAuth::class, 'login_process']);
-Route::post('/login', [MyAuth::class, 'register_process']);
+Route::post('/register', [MyAuth::class, 'register_process']);
 
 // use Illuminate\Http\Request;
 Route::get('/my-route', function(){ //เอาไว้เข้าถึงตัวเว็บที่เราอยากจะแสดงผล ใน myfloder
