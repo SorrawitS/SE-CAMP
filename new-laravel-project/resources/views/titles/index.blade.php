@@ -3,16 +3,22 @@
 @section('title', 'Titles')
 
 @section('content')
+
     <!-- Content Header (Page header) -->
     <div class="content-header">
         <div class="container-fluid">
             <div class="row mb-2">
                 <div class="col-sm-6">
                     <h1 class="m-0">SE CAMP</h1>
+
                 </div><!-- /.col -->
                 <div class="col-sm-6">
                     <ol class="breadcrumb float-sm-right">
                         <li class="breadcrumb-item"><a href="#">Titles</a></li>
+                        &nbsp; &nbsp; &nbsp;
+                        <a href="#" class="btn btn-info btn-lg" id="button-logout">
+                            <button id="logout-button"  onclick="buttonlogout() ">Logout</button>
+                        </a>
                     </ol>
                 </div><!-- /.col -->
             </div><!-- /.row -->
@@ -20,6 +26,15 @@
     </div>
     <!-- /.content-header -->
 
+    <script>
+        function buttonlogout() {
+                    // กระทำที่คุณต้องการเมื่อผู้ใช้คลิกยืนยัน
+                    window.location.href = '/login';
+                    alert('Action Confirmed!');
+                    // ปิดป็อปอัพ
+                    closePopup();
+                }
+    </script>
     <!-- Main content -->
     <div class="content">
         <div class="container-fluid">
