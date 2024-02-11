@@ -22,7 +22,7 @@
 
     let myval4 = [1,2,3,4];
     myval4[5] = 5;
-    myval4[6] = [6 , 5 , 4 , 5];
+    myval4[6] = [6 , 5 , 4 , 5 , 6];
     for(i = 0; i < myval4.length; i++){
         console.log(myval4[i]);
     }
