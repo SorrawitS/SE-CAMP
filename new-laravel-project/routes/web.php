@@ -17,6 +17,10 @@ Route::get('/', function () {
     return view('welcome'); // welcome.blade.php
 });
 
+Route::get('/multiply', function () {
+    return view('multiply'); // welcome.blade.php
+});
+
 use App\Http\Controllers\MyAuth;
 Route::get('/login', [MyAuth::class, 'login_view'])->name('login');
 Route::get('/register', [MyAuth::class, 'register_view']);
