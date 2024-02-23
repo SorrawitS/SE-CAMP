@@ -16,9 +16,7 @@
                     <ol class="breadcrumb float-sm-right">
                         <li class="breadcrumb-item"><a href="#">Titles</a></li>
                         &nbsp; &nbsp; &nbsp;
-                        <a href="#" class="btn btn-info btn-lg" id="button-logout">
-                            <button id="logout-button"  onclick="buttonlogout() ">Logout</button>
-                        </a>
+                        <button id="logout-button"  onclick="buttonlogout() ">Logout</button>
                     </ol>
                 </div><!-- /.col -->
             </div><!-- /.row -->
